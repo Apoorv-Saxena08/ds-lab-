@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct node{
+    int data;
+    struct node *next;
+}node; // alias
+
+int main() {
+    node *head = (node*)malloc(sizeof(node)) ;
+    head->data = 45;
+    head->next = NULL;
+    
+    printf("Linked List: \n");
+    node *temp = head;
+      while(temp) {
+      printf("%d ", temp->data);
+      temp = temp->next;
+    }
+    return 0;
+}
