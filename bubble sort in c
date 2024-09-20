@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+    printf("Apoorv Saxena - 2301920100069\n");
+    printf("BUBBLE SORT\n");
+    printf("Enter the size of array : ");
+    int n;
+    scanf("%d",&n);
+    printf("\n");
+    int arr[100];
+    for(int i=0;i<n;i++){
+      printf("Enter the element: \t");
+      scanf("%d" ,&arr[i]);
+    }
+    //print array before sorting 
+    printf("Before sorting \n");
+    for(int i=0;i<n;i++){
+        printf("%d",arr[i]);
+        printf("\t");
+    }
+    printf("\n");
+    //Bubble sort
+    for(int i=0;i<n-1;i++){
+        for(int j=0;j<n-1-i;j++){
+            if(arr[j]>arr[j+1]){
+                //swap
+                int temp = arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
+            }
+        }
+    }
+    
+    //print array after sorting 
+    printf("After sorting \n");
+    for(int i=0;i<n;i++){
+        printf("%d",arr[i]);
+        printf("\t");
+    }
+    return 0;
+}
