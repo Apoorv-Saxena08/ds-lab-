@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    printf("Apoorv Saxena  2301920100069\n");
+    printf("Apoorv Saxena - 2301920100069\n");
     printf("BUBBLE SORT\n");
     printf("Enter the size of array : ");
     int n;
