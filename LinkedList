@@ -3,7 +3,7 @@
 typedef struct node{
     int data;
     struct node *next;
-}node; // alias 
+}node; // alias
 
 int main() {
     node *head = (node*)malloc(sizeof(node)) ;
